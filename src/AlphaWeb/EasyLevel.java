@@ -11,6 +11,10 @@ public class EasyLevel extends Level {
     public EasyLevel() {
         super("Easy", 180, 10); // 3 minutes timer, base score 10
     }
+    
+    public void display(){
+        System.out.println("hello world");
+    }
 
     @Override
     public int calculateScore(int foundWordsCount) {
