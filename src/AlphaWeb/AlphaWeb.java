@@ -18,9 +18,10 @@ public class AlphaWeb {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to AlphaWeb!");
         System.out.println("Press 1 to Play");
+        
         System.out.print("Enter your choice: ");
-
         int choice = scanner.nextInt();
+        
         if (choice == 1) {
             Category category = new Category();
             category.showCategories();

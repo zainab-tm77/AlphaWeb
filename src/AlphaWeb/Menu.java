@@ -13,12 +13,12 @@ public class Menu {
     private Scanner scanner = new Scanner(System.in);
 
     public void showMenuOptions() {
-        System.out.println("\n📋 Menu Options:");
+        System.out.println("\n==== Menu Options ====");
         System.out.println("1. Continue");
         System.out.println("2. Take Hint");
         System.out.println("3. Exit Game");
-        System.out.print("Choose an option: ");
         
+        System.out.print("Choose an option: ");       
         int choice = scanner.nextInt();
         scanner.nextLine(); // Clear buffer
 

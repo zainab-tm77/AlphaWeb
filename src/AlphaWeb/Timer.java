@@ -25,7 +25,7 @@ public class Timer {
 
     public void stopTimer() {
         timeUp = true;
-        System.out.println("🛑 Timer stopped.");
+        System.out.println("Timer stopped.");
     }
 
     public boolean isTimeUp() {

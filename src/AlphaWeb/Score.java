@@ -7,7 +7,7 @@ package AlphaWeb;
 
 /**
  *
- * @author kashif
+ * @author Shafia Haider 
  */
 public class Score {
 

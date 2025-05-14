@@ -39,8 +39,8 @@ public class Game {
     }
     
     public void startGame() {
-        System.out.println("\n🎮 Game Started!");
-        System.out.println("🕑 Time Limit: " + timer + " seconds");
+        System.out.println("\nGame Started!");
+        System.out.println("Time Limit: " + timer + " seconds");
         System.out.println("Find the following words:");
 
         for (String word : wordsToFind) {
@@ -71,10 +71,10 @@ public class Game {
                 if (wordsToFind.contains(input) && !foundWords.contains(input)) {
                     foundWords.add(input);
                     score += 10;
-                    System.out.println("✅ Correct! Score: " + score);
+                    System.out.println("Correct! Score: " + score);
                 } else {
                     wrongAttempts++;
-                    System.out.println("❌ Incorrect or already found. Try again!");
+                    System.out.println("Incorrect or already found. Try again!");
                     hangman.drawHangman(wrongAttempts);
                     
                     if(wrongAttempts >= 6){
@@ -102,7 +102,7 @@ public class Game {
     
     private void takeHint() {
         if (hintsUsed >= maxHints) {
-            System.out.println("🚫 No hints left!");
+            System.out.println("No hints left!");
             return;
         }
 
@@ -110,7 +110,7 @@ public class Game {
             if (!foundWords.contains(word)) {
                 hintsUsed++;
                 score -= hintPenalty;
-                System.out.println("💡 Hint: The word starts with '" + word.charAt(0) + "' and is " + word.length() + " letters long.");
+                System.out.println("Hint: The word starts with '" + word.charAt(0) + "' and is " + word.length() + " letters long.");
                 System.out.println("New Score: " + score);
                 return;
             }
@@ -118,9 +118,9 @@ public class Game {
     }
     
     private void endGame() {
-        System.out.println("\n⏰ Time's up or all words found!");
-        System.out.println("🏆 Final Score: " + score);
-        System.out.println("📦 Words Found: " + foundWords);
+        System.out.println("\nTime's up or all words found!");
+        System.out.println("Final Score: " + score);
+        System.out.println("Words Found: " + foundWords);
         
         Result result = new Result(score);
         result.showResult();

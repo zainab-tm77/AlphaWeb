@@ -21,10 +21,9 @@ public class Theme {
         System.out.println("1. Classic Hangman");
         System.out.println("2. Pirate Adventure");
         System.out.println("3. Space Galaxy");
+        
         System.out.print("Enter your choice: ");
-
         int choice = scanner.nextInt();
-        scanner.nextLine(); // clear newline
 
         switch (choice) {
             case 1:

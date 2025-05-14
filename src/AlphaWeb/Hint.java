@@ -25,6 +25,6 @@ public class Hint {
         
         Random rand = new Random();
         String hintWord = remainingWords.get(rand.nextInt(remainingWords.size()));
-        System.out.println("💡 Hint: One word is --> " + hintWord.charAt(0) + "...");
+        System.out.println("Hint: One word is --> " + hintWord.charAt(0) + "...");
     }
 }

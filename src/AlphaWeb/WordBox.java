@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author malai
+ * @author Zainab Tahir
  */
 public class WordBox {
 
@@ -19,7 +19,7 @@ public class WordBox {
 
     public void addWord(String word) {
         foundWords.add(word);
-        System.out.println("📦 Word added to WordBox: " + word);
+        System.out.println("Word added to WordBox: " + word);
     }
 
     public void displayWords() {

@@ -10,7 +10,7 @@ package AlphaWeb;
  */
 public class Exit {
     public void exitGame() {
-        System.out.println("\n👋 Exiting the game. Thanks for playing!");
+        System.out.println("\nExiting the game. Thanks for playing!");
         System.exit(0);
     }
 }

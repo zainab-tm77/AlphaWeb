@@ -6,7 +6,7 @@ package AlphaWeb;
 
 /**
  *
- * @author malai
+ * @author Zainab
  */
 public class Hangman {
 
@@ -44,7 +44,7 @@ public class Hangman {
                 break;
             case 6:
                 System.out.println("\n  O\n /|\\\n / \\");
-                System.out.println("☠️  Game Over!");
+                System.out.println("==== Game Over! ====");
                 break;
             default:
                 break;
